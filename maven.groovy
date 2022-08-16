@@ -1,6 +1,6 @@
 node{
   stage('Build'){
-    echo'building successful'
+    echo 'building successful'
   }
   stage('Test'){
     echo 'testing successful'
