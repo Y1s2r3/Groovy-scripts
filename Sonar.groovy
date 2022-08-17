@@ -9,4 +9,5 @@ node {
     withSonarQubeEnv('SonarCloud')
     bat "mvn sonar:sonar"
   }
+}
   
