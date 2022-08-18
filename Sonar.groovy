@@ -7,7 +7,8 @@ node {
   }
   stage('SonarCloud Analysis') {
     (withSonarQubeEnv('SonarCloud')
-    bat "mvn sonar:sonar")
+    bat "mvn sonar:sonar"
+    )
   }
 }
   
