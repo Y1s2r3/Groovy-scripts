@@ -10,4 +10,5 @@ node {
       sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.8.6:sonar'
   }
 }
+}
   
