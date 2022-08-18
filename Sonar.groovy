@@ -5,5 +5,8 @@ node {
   stage('Build') {
     bat "cd initial && mvn clean install"
   }
+  stage('Upload War file to nexus') {
+    bat "mvn clean package"
+  }
 }
   
