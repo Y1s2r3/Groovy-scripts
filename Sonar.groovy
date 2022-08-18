@@ -8,5 +8,8 @@ node {
   stage('Upload War file to nexus') {
     bat "cd initial && mvn clean package"
   }
+  stage('SonarQube analysis') {
+    withSonarQubeEnv('My SonarQube Server') { // You can override the credential to be used
+      sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.8.6:sonar'
 }
   
