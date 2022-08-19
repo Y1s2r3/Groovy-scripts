@@ -7,9 +7,7 @@
   }
   stage ('analysis') {
    bat "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar \
-  -Dsonar.projectKey=wertfg \
   -Dsonar.host.url=http://localhost:9000 \
-   -Dsonar.user=admin \
-  -Dsonar.login=eb57ec8810b20a8b7ed1d9eebb39f80840e33009"
+  -Dsonar.login=d9d9baef117586a3303d6c203bcfebf6d2bd1e79"
   } 
  }
