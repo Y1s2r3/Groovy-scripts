@@ -3,7 +3,7 @@
   git branch: 'main', url: 'https://github.com/Y1s2r3/Maven-demo.git'
   }
   stage('Build') {
-    bat "mvn -Dmaven.test.failure.ignore=true clean package"
+    bat "cd initial && mvn -Dmaven.test.failure.ignore=true clean package"
     archiveArtifacts artifacts: 'target/*.jar', onlyIfSuccessful: true
   }
   stage ('analysis') {
