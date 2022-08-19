@@ -1,6 +1,6 @@
  node {
   stage('Clone') {
-  git "https://github.com/Y1s2r3/Maven-demo.git"
+  git "https://github.com/Y1s2r3/Groovy-scripts.git"
   }
   stage('Build') {
     bat "mvn -Dmaven.test.failure.ignore=true clean package"
