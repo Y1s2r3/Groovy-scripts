@@ -15,3 +15,4 @@
     -Dsonar.user=admin \
     -Dsonar.login=sqp_e19f2b234afa50cc33d48e0436d19b3c134e3783"
   } 
+ }
